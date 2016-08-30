@@ -90,3 +90,89 @@ p{
     opacity: 1;
 }
 }
+
+
+.computer{
+    width: 800px;
+    height: 600px;
+    background: url("../img/computer.png") no-repeat center top;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.box{
+    width:400px; height:400px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+
+}
+.pre{
+    position: absolute;
+    left:0;
+    top: 100px;
+    font-size: 50px;
+    color: #FFF;
+    z-index: 20;
+    cursor: pointer;
+}
+.next{
+    position: absolute;;
+    right:0;
+    top:100px;
+    font-size: 50px;
+    color: #FFF;
+    z-index: 20;
+    cursor: pointer;
+}
+.imgs{
+    margin: 0;
+    padding:0;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 1600px;
+    height:400px;
+    list-style: none;
+    z-index:10;
+}
+.imgs li{
+    margin:0;
+    padding:0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left:400px;
+    top:0;
+}
+.dh{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    list-style: none;
+    z-index: 20;
+
+}
+.dh li{
+    float: left;
+    background-color: #FFF;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 10px;
+    border: #F00 solid 2px;
+    color: #F00;
+    border-radius: 5px;
+    margin:0 10px 0 0;
+}
+.dh li:hover{
+    background-color: #F00;
+    color: #FFF;
+}
+.dh .hover{
+    background-color: #F00;
+    color: #FFF;
+    cursor: pointer;
+}

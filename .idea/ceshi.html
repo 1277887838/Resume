@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(lunbo){
+        var flag =  "go_to_left";
+        var p = 0;
+        function showImage (){
+            if (p ==-1200){
+                flag ="go_to_left";
+            }
+            else if (p ==0){
+                flag ="go_to_right";
+            }
+            if (p == "go_to_left"){
+                $('.imgs').animate({left:p},500);
+                console.log(p);
+                p -=400;
+            }
+            else  if (p == "go_to_right"){
+                $(".imgs").animate({left:p},500);
+                p += 400;
+            }
+        }
+        set =setInterval(showImage,1000);
+        $(".index li").each(function(index,element){
+            $(this).mouseover(function(lunbo){
+                $(".imgs").animate({left:-400*index},500);
+
+            })
+
+        })
+    })
+</script>
+<body>
+<div class="box">
+    <ul class="imgs">
+        <li><img src="../img/yp_01.jpg" alt=""></li>
+        <li><img src="../img/yp_02.jpg" alt=""></li>
+        <li><img src="../img/yp_03.jpg" alt=""></li>
+        <li><img src="../img/yp_04.jpg" alt=""></li>
+    </ul>
+    <ul class="index">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <!--<ul>
+        <li>深圳市好伴时尚电子商务公司</li>
+        <li>2016年1月 ～ 2016年8月</li>
+        <li>1.根据设计师提供的PSD图制作静态HTML页面,特效交互</li>
+        <li>2.天猫店铺后台模版制作. 如导航,轮播,豆腐块模块的编写.</li>
+        <li><a href="http://imis.tmall.com/" target="_blank">3.线上页面: http://imis.tmall.com/</a></li>
+    </ul>-->
+</div>
+</body>
+</html>
