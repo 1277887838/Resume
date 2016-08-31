@@ -47,27 +47,32 @@ p{
     background:url(../img/bg1.png) no-repeat center top;
     background-size: 120%;
     position: relative;
+    overflow: hidden;
 }
 .banner{
     position: relative;
     width: 100%;
     margin-top: 100px;
 }
+.banner li{
+    list-style: none;
+}
 .banner img{
     position: absolute;
     cursor: pointer;
+
 }
 .banner img.img_1{
-    left:30px;
+    left:4%;
 }
 .banner img.img_2{
-    left:500px;
+    left:27%;
 }
 .banner img.img_3{
-    left:980px;
+    left:50%;
 }
 .banner img.img_4{
-    left:1450px;
+    left:73%;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
     background: #fff;
@@ -99,10 +104,11 @@ p{
     background-size: 100%;
     margin: 0 auto;
     margin-top: 50px;
+    padding: 31px 0 0 35px;
 }
 
 .box{
-    width:400px; height:400px;
+    width:765px; height:400px;
     position: relative;
     overflow: hidden;
     position: relative;
@@ -110,18 +116,18 @@ p{
 }
 .pre{
     position: absolute;
-    left:0;
-    top: 100px;
-    font-size: 50px;
+    left:20px;
+    top: 170px;
+    font-size: 70px;
     color: #FFF;
     z-index: 20;
     cursor: pointer;
 }
 .next{
     position: absolute;;
-    right:0;
-    top:100px;
-    font-size: 50px;
+    right:20px;
+    top:170px;
+    font-size: 70px;
     color: #FFF;
     z-index: 20;
     cursor: pointer;
@@ -132,7 +138,7 @@ p{
     position: absolute;
     left:0;
     top:0;
-    width: 1600px;
+    width: 2295px;
     height:400px;
     list-style: none;
     z-index:10;
@@ -140,10 +146,10 @@ p{
 .imgs li{
     margin:0;
     padding:0;
-    width: 400px;
+    width: 765px;
     height: 400px;
     position: absolute;
-    left:400px;
+    left:765px;
     top:0;
 }
 .dh{
@@ -162,17 +168,37 @@ p{
     height: 10px;
     text-align: center;
     line-height: 10px;
-    border: #F00 solid 2px;
-    color: #F00;
+    border: #1FAEFF solid 2px;
+    color: #1FAEFF;
     border-radius: 5px;
     margin:0 10px 0 0;
 }
 .dh li:hover{
-    background-color: #F00;
+    background-color: #c;
     color: #FFF;
 }
 .dh .hover{
-    background-color: #F00;
+    background-color: #1FAEFF;
     color: #FFF;
     cursor: pointer;
+}
+.lx{
+    margin-top: 50px;
+}
+.lx p {
+    display: none;
+}
+.t_to_t{
+    animation:t_to_t 4s ;
+    visibility:visible;
+}
+@keyframes t_to_t {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
