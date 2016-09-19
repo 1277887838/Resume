@@ -44,7 +44,7 @@ p{
     margin-top: 20px;
 }
 .section{
-    background:url(img/bg1.jpg) no-repeat center top;
+    background:url("http://d3.freep.cn/3tb_160918235002vfgi574031.jpg") no-repeat center top;
     background-size: 120%;
     position: relative;
     overflow: hidden;
@@ -106,7 +106,7 @@ p{
 .computer{
     width: 800px;
     height: 600px;
-    background: url("img/computer.png") no-repeat center top;
+    background: url("http://d3.freep.cn/3tb_160918235027f3vu574031.png") no-repeat center top;
     background-size: 100%;
     margin: 0 auto;
     margin-top: 50px;
